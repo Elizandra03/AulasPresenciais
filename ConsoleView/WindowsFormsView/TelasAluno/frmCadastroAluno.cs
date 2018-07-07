@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelos;
+using Controllers;
 
 namespace WindowsFormsView.TelasAluno
 {
@@ -30,6 +31,9 @@ namespace WindowsFormsView.TelasAluno
 
             novoAluno.Nome = txtNome.Text;
             novoAluno.Matricula = int.Parse(txtMatricula.Text);
+
+            AlunosController alunosController = new AlunosController();
+            alunosController.Inserir(novoAluno);
         }
     }
 }

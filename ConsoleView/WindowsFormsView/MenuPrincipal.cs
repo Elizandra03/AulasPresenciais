@@ -26,7 +26,8 @@ namespace WindowsFormsView
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-
+            frmListaAlunos listaAlunos = new frmListaAlunos();
+            listaAlunos.Show();
         }
     }
 }
