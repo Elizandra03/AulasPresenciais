@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsView.TelasAluno
+﻿namespace WindowsFormsView.TelasProfessor
 {
-    partial class frmListaAlunos
+    partial class frmListaProfessor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dvgAlunos = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgAlunos)).BeginInit();
+            this.dgvProfessor = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProfessor)).BeginInit();
             this.SuspendLayout();
             // 
-            // dvgAlunos
+            // dgvProfessor
             // 
-            this.dvgAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgAlunos.Location = new System.Drawing.Point(-1, 0);
-            this.dvgAlunos.Name = "dvgAlunos";
-            this.dvgAlunos.Size = new System.Drawing.Size(636, 190);
-            this.dvgAlunos.TabIndex = 0;
+            this.dgvProfessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProfessor.Location = new System.Drawing.Point(0, 3);
+            this.dgvProfessor.Name = "dgvProfessor";
+            this.dgvProfessor.Size = new System.Drawing.Size(641, 187);
+            this.dgvProfessor.TabIndex = 0;
             // 
-            // frmListaAlunos
+            // frmListaProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 190);
-            this.Controls.Add(this.dvgAlunos);
-            this.Name = "frmListaAlunos";
-            this.Text = "frmListaAlunos";
-            this.Load += new System.EventHandler(this.frmListaAlunos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dvgAlunos)).EndInit();
+            this.ClientSize = new System.Drawing.Size(642, 190);
+            this.Controls.Add(this.dgvProfessor);
+            this.Name = "frmListaProfessor";
+            this.Text = "frmListaProfessor";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProfessor)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dvgAlunos;
+        private System.Windows.Forms.DataGridView dgvProfessor;
     }
 }

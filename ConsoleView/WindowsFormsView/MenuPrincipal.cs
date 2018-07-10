@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsView.TelasAluno;
+using WindowsFormsView.TelasProfessor;
 
 namespace WindowsFormsView
 {
@@ -28,6 +29,18 @@ namespace WindowsFormsView
         {
             frmListaAlunos listaAlunos = new frmListaAlunos();
             listaAlunos.Show();
+        }
+
+        private void btnCadastrarP_Click(object sender, EventArgs e)
+        {
+            frmCadastroProfessor frmprofessor = new frmCadastroProfessor();
+            frmprofessor.Show();
+        }
+
+        private void btnListarP_Click(object sender, EventArgs e)
+        {
+            frmListaProfessor listaProfessor = new frmListaProfessor();
+            listaProfessor.Show();
         }
     }
 }
