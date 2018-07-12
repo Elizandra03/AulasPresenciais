@@ -100,7 +100,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
             this.Name = "frmCadastroDisciplina";
-            this.Text = "frmCadastroDisciplina";
+            this.Text = "Cadastro de Disciplinas";
             this.ResumeLayout(false);
             this.PerformLayout();
 

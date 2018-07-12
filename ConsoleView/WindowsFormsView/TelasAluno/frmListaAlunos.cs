@@ -8,7 +8,7 @@ namespace WindowsFormsView.TelasAluno
 {
     public partial class frmListaAlunos : Form
     {
-        private readonly object SelectedItems;
+        Contexto contexto = new Contexto();
 
         public frmListaAlunos()
         {
@@ -19,16 +19,6 @@ namespace WindowsFormsView.TelasAluno
         {
             AlunosController alunosController = new AlunosController();
             dvgAlunos.DataSource = alunosController.ListarTodos();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int Linha = dvgAlunos.CurrentRow.Index;
-
-            dvgAlunos.Rows[Linha].Cells[0].ToString();
-
-            this.dvgAlunos.Rows.Remove(this.dvgAlunos.CurrentRow); 
-
         }
     }
 }

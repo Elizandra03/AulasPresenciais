@@ -47,7 +47,7 @@
             this.ClientSize = new System.Drawing.Size(585, 189);
             this.Controls.Add(this.dgvProf);
             this.Name = "frmListaProfessor";
-            this.Text = "frmListaProfessor";
+            this.Text = "Lista de Professores";
             this.Load += new System.EventHandler(this.frmListaProfessor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProf)).EndInit();
             this.ResumeLayout(false);

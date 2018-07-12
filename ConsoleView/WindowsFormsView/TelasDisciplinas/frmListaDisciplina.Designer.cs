@@ -47,7 +47,7 @@
             this.ClientSize = new System.Drawing.Size(535, 181);
             this.Controls.Add(this.dgvDisc);
             this.Name = "frmListaDisciplina";
-            this.Text = "frmListaDisciplina";
+            this.Text = "Lista das Disciplinas";
             this.Load += new System.EventHandler(this.frmListaDisciplina_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisc)).EndInit();
             this.ResumeLayout(false);

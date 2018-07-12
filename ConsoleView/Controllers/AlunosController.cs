@@ -34,11 +34,6 @@ namespace Controllers
             return (Aluno)aluno;
         }
 
-        public object Excluir()
-        {
-            throw new NotImplementedException();
-        }
-
         public Aluno BuscarNome(string nome)
         {
             //usando LINQ
@@ -60,11 +55,6 @@ namespace Controllers
             contexto.SaveChanges();
         }
 
-        public void Excluir (int idAluno)
-        {
-            Aluno aluno = BuscarPorID(idAluno);
-            contexto.Alunos.Remove(aluno);
-            contexto.SaveChanges();
-        }
+
     }
 }

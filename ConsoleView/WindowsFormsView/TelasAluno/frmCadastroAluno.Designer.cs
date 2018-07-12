@@ -100,7 +100,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmCadastroAluno";
-            this.Text = "frmCadastroAluno";
+            this.Text = "Cadastro de Alunos";
             this.ResumeLayout(false);
             this.PerformLayout();
 

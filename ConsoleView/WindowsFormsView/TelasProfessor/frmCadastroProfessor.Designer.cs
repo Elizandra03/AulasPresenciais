@@ -121,7 +121,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmCadastroProfessor";
-            this.Text = "frmCadastroProfessor";
+            this.Text = "Cadastro de Professores";
             this.ResumeLayout(false);
             this.PerformLayout();
 
