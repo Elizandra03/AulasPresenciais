@@ -39,6 +39,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -53,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TelasAluno\frmAtualizarExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasAluno\frmAtualizarExcluir.Designer.cs">
+      <DependentUpon>frmAtualizarExcluir.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelasAluno\frmCadastroAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +82,18 @@
     <Compile Include="TelasAluno\frmListaAlunos.Designer.cs">
       <DependentUpon>frmListaAlunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelasDisciplinas\frmCadastroDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasDisciplinas\frmCadastroDisciplina.Designer.cs">
+      <DependentUpon>frmCadastroDisciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelasDisciplinas\frmListaDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasDisciplinas\frmListaDisciplina.Designer.cs">
+      <DependentUpon>frmListaDisciplina.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelasProfessor\frmCadastroProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +106,9 @@
     <Compile Include="TelasProfessor\frmListaProfessor.Designer.cs">
       <DependentUpon>frmListaProfessor.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TelasAluno\frmAtualizarExcluir.resx">
+      <DependentUpon>frmAtualizarExcluir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelasAluno\frmCadastroAluno.resx">
       <DependentUpon>frmCadastroAluno.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +126,12 @@
     </Compile>
     <EmbeddedResource Include="TelasAluno\frmListaAlunos.resx">
       <DependentUpon>frmListaAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasDisciplinas\frmCadastroDisciplina.resx">
+      <DependentUpon>frmCadastroDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasDisciplinas\frmListaDisciplina.resx">
+      <DependentUpon>frmListaDisciplina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelasProfessor\frmCadastroProfessor.resx">
       <DependentUpon>frmCadastroProfessor.cs</DependentUpon>
@@ -123,9 +153,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Disciplina\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Controllers\Controllers.csproj">
       <Project>{08c124b4-62de-4104-9ed1-33f47f22a112}</Project>

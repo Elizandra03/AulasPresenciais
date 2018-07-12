@@ -10,7 +10,6 @@ namespace Controllers
 {
     public class ProfessorController
     {
-
         Contexto contexto = new Contexto();
 
         public void Inserir(Professor novoProf)
@@ -19,17 +18,17 @@ namespace Controllers
             contexto.SaveChanges();
         }
 
-        public List<Professor> ListarTodosProfessor()
+        public List<Professor> ListarTodosProf()
         {
             return contexto.Professores.ToList();
         }
 
 
-        public Professor BuscarMatricula(int matricula)
+        public Professor BuscarMatricula(string cpf)
         {
             //usando LINQ
             var professor = from p in contexto.Professores
-                        where p.Matricula == matricula
+                        where p.CPF == cpf
                         select p;
 
             return (Professor)professor;

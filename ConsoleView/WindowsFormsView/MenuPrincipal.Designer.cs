@@ -29,25 +29,41 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnListarP = new System.Windows.Forms.Button();
             this.btnCadastrarP = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnListarDisc = new System.Windows.Forms.Button();
+            this.btnCadDisc = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.btnListar);
             this.groupBox1.Controls.Add(this.btnCadastrar);
             this.groupBox1.Location = new System.Drawing.Point(12, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(87, 80);
+            this.groupBox1.Size = new System.Drawing.Size(87, 104);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Aluno";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(6, 77);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 2;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnListar
             // 
@@ -100,17 +116,51 @@
             this.btnCadastrarP.UseVisualStyleBackColor = true;
             this.btnCadastrarP.Click += new System.EventHandler(this.btnCadastrarP_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnListarDisc);
+            this.groupBox3.Controls.Add(this.btnCadDisc);
+            this.groupBox3.Location = new System.Drawing.Point(198, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(87, 80);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Disciplinas";
+            // 
+            // btnListarDisc
+            // 
+            this.btnListarDisc.Location = new System.Drawing.Point(6, 47);
+            this.btnListarDisc.Name = "btnListarDisc";
+            this.btnListarDisc.Size = new System.Drawing.Size(75, 23);
+            this.btnListarDisc.TabIndex = 2;
+            this.btnListarDisc.Text = "Listar";
+            this.btnListarDisc.UseVisualStyleBackColor = true;
+            this.btnListarDisc.Click += new System.EventHandler(this.btnListarDisc_Click);
+            // 
+            // btnCadDisc
+            // 
+            this.btnCadDisc.Location = new System.Drawing.Point(6, 19);
+            this.btnCadDisc.Name = "btnCadDisc";
+            this.btnCadDisc.Size = new System.Drawing.Size(75, 23);
+            this.btnCadDisc.TabIndex = 1;
+            this.btnCadDisc.Text = "Cadastrar";
+            this.btnCadDisc.UseVisualStyleBackColor = true;
+            this.btnCadDisc.Click += new System.EventHandler(this.btnCadDisc_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 325);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(299, 143);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -123,5 +173,9 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnListarP;
         private System.Windows.Forms.Button btnCadastrarP;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnListarDisc;
+        private System.Windows.Forms.Button btnCadDisc;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }

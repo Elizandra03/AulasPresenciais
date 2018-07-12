@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Controllers;
 using Modelos;
+using Controllers;
 
 namespace WindowsFormsView.TelasProfessor
 {
@@ -22,8 +22,8 @@ namespace WindowsFormsView.TelasProfessor
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             txtNome.Text = string.Empty;
-            txtMatricula.Text = string.Empty;
-            txtDisciplina.Text = string.Empty;
+            mtxtCPF.Text = string.Empty;
+            txtFormacao.Text = string.Empty;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -31,8 +31,8 @@ namespace WindowsFormsView.TelasProfessor
             Professor novoProf = new Professor();
 
             novoProf.Nome = txtNome.Text;
-            novoProf.Matricula = int.Parse(txtMatricula.Text);
-            novoProf.Disciplina = txtDisciplina.Text;
+            novoProf.CPF = mtxtCPF.Text;
+            novoProf.Disciplina = txtFormacao.Text;
 
             ProfessorController professorController = new ProfessorController();
             professorController.Inserir(novoProf);

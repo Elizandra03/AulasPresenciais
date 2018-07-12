@@ -10,10 +10,10 @@ namespace Modelos
     public class Professor
     {
         [Key]
-        public int ProfID { get; set; }
+        public int idProf { get; set; }
 
         public string Nome { get; set; }
-        public int Matricula { get; set; }
+        public string CPF { get; set; }
         public string Disciplina { get; set; }
     }
 }
