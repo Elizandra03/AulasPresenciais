@@ -34,6 +34,11 @@ namespace Controllers
             return (Aluno)aluno;
         }
 
+        public object Excluir()
+        {
+            throw new NotImplementedException();
+        }
+
         public Aluno BuscarNome(string nome)
         {
             //usando LINQ

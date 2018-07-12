@@ -55,11 +55,5 @@ namespace WindowsFormsView
             frmListaDisciplina listaDisciplina = new frmListaDisciplina();
             listaDisciplina.Show();
         }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            frmAtualizarExcluir frmaltera = new frmAtualizarExcluir();
-            frmaltera.Show();
-        }
     }
 }
